@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-image: url('file:background.jpg');" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sklepGui.KupujFXMLController">
+   <children>
+      <Label fx:id="labelInfo" layoutX="181.0" layoutY="96.0" prefHeight="51.0" text="Produkty zostały zakupione pomyślnie." />
+      <Button fx:id="buttonWrocDoSklepu" layoutX="243.0" layoutY="160.0" mnemonicParsing="false" onAction="#actionPowrotDoSklepu" text="Wróć do sklepu" />
+      <Button fx:id="buttonWyloguj" layoutX="266.0" layoutY="200.0" mnemonicParsing="false" onAction="#actionWyloguj" text="Wyloguj" />
+   </children>
+</AnchorPane>

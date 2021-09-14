@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-image: url('file:background.jpg');" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sklepGui.KoszykFXMLController">
+   <children>
+      <ListView fx:id="listViewKoszyk" layoutX="13.0" layoutY="114.0" prefHeight="200.0" prefWidth="200.0" />
+      <Label fx:id="labelKoszyk" layoutX="13.0" layoutY="97.0" text="Koszyk" />
+      <TextField fx:id="textFieldWartoscKoszyka" editable="false" layoutX="123.0" layoutY="320.0" prefHeight="27.0" prefWidth="90.0" />
+      <Label layoutX="14.0" layoutY="325.0" text="Wartość koszyka:" />
+      <Label fx:id="labelCena" layoutX="243.0" layoutY="154.0" text="Cena:" />
+      <Label fx:id="labelIlosc" layoutX="368.0" layoutY="154.0" text="Ilość:" />
+      <TextField fx:id="textFieldCena" editable="false" layoutX="279.0" layoutY="149.0" prefHeight="27.0" prefWidth="64.0" />
+      <TextField fx:id="textFieldIlosc" editable="false" layoutX="401.0" layoutY="149.0" prefHeight="27.0" prefWidth="64.0" />
+      <Button fx:id="buttonUsunWybranyProdukt" layoutX="244.0" layoutY="188.0" mnemonicParsing="false" onAction="#actionUsunWybranyProdukt" text="Usuń wybrany produkt" />
+      <Button fx:id="buttonUsunWszystko" layoutX="427.0" layoutY="188.0" mnemonicParsing="false" onAction="#actionUsunWszystko" text="Usuń wszyskto" />
+      <Button fx:id="buttonKupuj" layoutX="243.0" layoutY="320.0" mnemonicParsing="false" onAction="#actionKupuj" text="Kupuj" />
+      <Button fx:id="buttonWyloguj" layoutX="504.0" layoutY="21.0" mnemonicParsing="false" onAction="#actionWyloguj" text="Wyloguj" />
+      <Label fx:id="labelNazwa" layoutX="244.0" layoutY="116.0" text="Nazwa:" />
+      <TextField fx:id="textFieldNazwa" layoutX="296.0" layoutY="111.0" />
+      <Button fx:id="buttonWrocDoSklepu" layoutX="14.0" layoutY="21.0" mnemonicParsing="false" onAction="#actionPowrotDoSklepu" text="Wróć do sklepu" />     
+   </children>
+</AnchorPane>

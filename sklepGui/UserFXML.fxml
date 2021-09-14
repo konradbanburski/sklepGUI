@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-image: url('file:background.jpg');" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sklepGui.UserFXMLController">
+   <children>
+      <ListView fx:id="listProdukty" layoutX="13.0" layoutY="114.0" prefHeight="200.0" prefWidth="200.0" />
+      <Label layoutX="13.0" layoutY="97.0" text="Lista produktów" />
+      <Label fx:id="labelNazwa" layoutX="352.0" layoutY="119.0" prefHeight="17.0" prefWidth="48.0" text="Nazwa:" AnchorPane.topAnchor="119.0" />
+      <Label fx:id="labelCena" layoutX="394.0" layoutY="165.0" text="Cena za 1kg:" />
+      <TextField fx:id="textFieldNazwa" editable="false" layoutX="400.0" layoutY="114.0" />
+      <TextField fx:id="textFieldCena" editable="false" layoutX="473.0" layoutY="160.0" prefHeight="27.0" prefWidth="94.0" />
+      <TextField fx:id="textFieldIloscDostepna" editable="false" layoutX="472.0" layoutY="201.0" prefHeight="27.0" prefWidth="94.0" />
+      <Label fx:id="labelIloscDostepna" layoutX="376.0" layoutY="206.0" text="Ilość dostępna:" />
+      <TextField fx:id="textFieldIlosc" layoutX="337.0" layoutY="235.0" prefHeight="27.0" prefWidth="78.0" />
+      <Label fx:id="labelIlosc" layoutX="300.0" layoutY="240.0" text="Ilość:" />
+      <Button fx:id="buttonDodaj" layoutX="440.0" layoutY="235.0" mnemonicParsing="false" onAction="#actionDodaj" text="Dodaj do koszyka" />
+      <Label fx:id="labelMsg" layoutX="281.0" layoutY="275.0" prefHeight="46.0" prefWidth="289.0" wrapText="true" />
+      <Button fx:id="buttonPrzejdzDoKoszyka" layoutX="426.0" layoutY="324.0" mnemonicParsing="false" onAction="#actionPrzejdzDoKoszyka" text="Przejdź do koszyka" />
+      <Button fx:id="buttonWyloguj" layoutX="504.0" layoutY="21.0" mnemonicParsing="false" onAction="#actionWyloguj" text="Wyloguj" />
+      <Label layoutX="418.0" layoutY="240.0" text="kg" />
+   </children>
+</AnchorPane>

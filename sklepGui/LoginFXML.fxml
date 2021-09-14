@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400" prefWidth="600.0" style="-fx-background-image: url('file:background.jpg');" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sklepGui.LoginFXMLController">
+   <children>
+      <Label id="labelLogin" layoutX="222.0" layoutY="123.0" text="Login" />
+      <Label id="labelHalo" layoutX="222.0" layoutY="177.0" text="Haslo" />
+      <Button id="buttonSubmitLogin" layoutX="324.0" layoutY="239.0" mnemonicParsing="false" onAction="#logowanie" text="Zaloguj" />
+      <TextField fx:id="login" layoutX="221.0" layoutY="140.0" promptText="Wpisz login" />
+      <PasswordField fx:id="haslo" layoutX="221.0" layoutY="194.0" promptText="Wpisz haslo" />
+   </children>
+</AnchorPane>

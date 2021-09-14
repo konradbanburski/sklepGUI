@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-image: url('file:background.jpg');" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sklepGui.AdminFXMLController">
+   <children>
+      <MenuBar fx:id="myMenuBar">
+        <menus>
+          <Menu mnemonicParsing="false" text="Opcje">
+            <items>
+              <MenuItem fx:id="menuItemWyswietlInfo" mnemonicParsing="false" onAction="#actionWyswietlInfo" text="Pokaz produkty" />
+              <MenuItem fx:id="menuItemWyswietlLog" mnemonicParsing="false" onAction="#actionWyswietlLog" text="Wyświetl log" />
+              <MenuItem fx:id="menuItemWyloguj" mnemonicParsing="false" onAction="#actionWyloguj" text="Wyloguj" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Pane fx:id="paneInfo" layoutY="29.0" prefHeight="368.0" prefWidth="600.0">
+         <children>
+            <ListView fx:id="listViewProdukty" layoutX="14.0" layoutY="64.0" prefHeight="200.0" prefWidth="200.0" />
+            <TextField fx:id="textFieldNazwa" layoutX="355.0" layoutY="64.0" />
+            <TextField fx:id="textFieldCena" layoutX="355.0" layoutY="103.0" />
+            <TextField fx:id="textFieldIlosc" layoutX="355.0" layoutY="144.0" />
+            <TextField fx:id="textFieldIloscMin" layoutX="355.0" layoutY="184.0" />
+            <Label layoutX="310.0" layoutY="69.0" text="Nazwa:" />
+            <Label layoutX="319.0" layoutY="108.0" text="Cena:" />
+            <Label layoutX="320.0" layoutY="149.0" text="Ilość:" />
+            <Label layoutX="255.0" layoutY="189.0" text="Ilość minimalna:" />
+            <Label layoutX="14.0" layoutY="47.0" text="Produkty:" />
+            <Button fx:id="buttonZatwierdzZmiany" layoutX="255.0" layoutY="237.0" mnemonicParsing="false" onAction="#actionZatwierdzZmiany" prefHeight="27.0" prefWidth="307.0" text="Zatwierdź zmiany w wybranym produkcie" />
+            <Button fx:id="buttonUsunZaznaczony" layoutX="255.0" layoutY="276.0" mnemonicParsing="false" onAction="#actionUsunWybranyProdukt" prefHeight="27.0" prefWidth="307.0" text="Usuń wybrany produkt" />
+            <Button fx:id="buttonUtworzNowy" layoutX="255.0" layoutY="313.0" mnemonicParsing="false" onAction="#actionDodajProdukt" prefHeight="27.0" prefWidth="307.0" text="Dodaj nowy produkt" />
+            <Label fx:id="labelInfo" layoutX="14.0" layoutY="281.0" prefHeight="71.0" prefWidth="200.0" wrapText="true" />
+            <Label layoutX="529.0" layoutY="189.0" text="kg" />
+            <Label layoutX="529.0" layoutY="149.0" text="kg" />
+         </children>
+      </Pane>
+      <Pane fx:id="paneLog" layoutY="29.0" prefHeight="368.0" prefWidth="600.0" visible="false">
+         <children>
+            <TextArea fx:id="textAreaLog" editable="false" layoutX="14.0" layoutY="14.0" prefHeight="342.0" prefWidth="571.0" />
+            <Button fx:id="buttonWyczyscLog" layoutX="485.0" layoutY="14.0" mnemonicParsing="false" onAction="#actionWyczyscLog" style="-fx-border-radius: 0;" text="Wyczyść Log" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
